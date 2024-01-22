@@ -24,7 +24,8 @@ show tables;
 
 # Install DB Connector in venv
 pip install mysql-connector-python
-pip install sqlalchemy 
+pip install sqlalchemy
+ 
 
 
 
