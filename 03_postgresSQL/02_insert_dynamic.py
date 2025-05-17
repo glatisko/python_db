@@ -6,6 +6,7 @@ def insert_sale(cur, order_num, cust_name, prod_number, prod_name, quantity, pri
 	if discount != 0:
 		order_total = order_total * discount
 	
+ #dictionary for inserting data into sales table
     sale_data = {
 	'order_num' : order_num,
 	'cust_name' : cust_name,
@@ -31,6 +32,7 @@ if __name__ == "__main__":
    
    cursor = conn.cursor()
    
+   # ask user to enter data to be inserted into DB
    print("Input sale data:\n")
    order_num = int(input("What is the order number?\n"))
    cust_name = input("What is the customer's name?\n")
