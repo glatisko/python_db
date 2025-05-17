@@ -2,6 +2,9 @@
 # Advanced Python: Working with Databases
 https://www.linkedin.com/learning/advanced-python-working-with-databases-22307421/using-databases-to-level-up-your-python-applications?u=95233017
 
+# COURSE CODE 
+https://github.com/LinkedInLearning/advanced-python-working-with-databases-4365479
+
 
 ## Installation
 where python3

@@ -7,14 +7,12 @@ nano .zshrc
 export PATH=${PATH}:/usr/local/mysql/bin  
 source .zshrc  
 
-###  Create virtual env
+###  Create virtual env and DB Connector 
 python3 -m venv mysql-workspace  
 cd mysql-workspace  
 activate  
-
-### Install DB Connector 
 pip3 install mysql-connector-python  
-pip3 install sqlalchemy  
+
 
 ### Create  DB and depdendent tables via MySQL shell:
 sudo mysql -u root -p      
@@ -28,12 +26,24 @@ FOREIGN KEY (project_id) REFERENCES projects(project_id));
 mysql> show tables;  
 mysql> SELECT * FROM projects;   
 
-## Connet Python app to MySQL DB
+## Connect Python app to MySQL DB
 python3 01_connect_db.py
 
 
 ## Insert into MySQL DB Dependent data
 python3 02_insert_data_with_FK.py
+
+## SQL Alchemy Setup
+python3 -m venv mysql-sqlalchemy-workspace  
+cd mysql-sqlalchemy-workspace  
+activate  
+pip3 install mysql-connector-python  
+pip3 install sqlalchemy 
+
+
+## SQLAlchemy create/insert/select
+python3 03_SQLAlchemy.py  
+
 
 
  
