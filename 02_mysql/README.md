@@ -2,10 +2,10 @@
 # Install MySQL
 Download MySQL community edition
 ## add to path
-echo $SHELL
-nano .zshrc
-export PATH=${PATH}:/usr/local/mysql/bin
-source .zshrc
+echo $SHELL\n
+nano .zshrc\n
+export PATH=${PATH}:/usr/local/mysql/bin\n
+source .zshrc\n
 
 ## Create MySQL DB/tables
 sudo mysql -u root -p password
