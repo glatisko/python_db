@@ -11,9 +11,11 @@ def connect(db_name):
 		print(e)
 
 if __name__ == '__main__':
+    
 	db = connect("projects")
-	cursor = db.cursor()
+	cursor = db.cursor() 
 	cursor.execute("SELECT * FROM projects")
-	project_records = cursor.fetchall()
+ 
+	project_records = cursor.fetchall() 
 	print(project_records)
 	db.close()
